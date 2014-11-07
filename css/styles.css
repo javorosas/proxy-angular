@@ -16,10 +16,40 @@
 	margin-bottom: 5px;
 }
 
-.messages > li span {
+.messages > li > span {
 	background-color: #f0f0f0;
 	border: 1px solid #ddd;
 	border-radius: 5px;
-	padding: 5px;
+	padding: 5px 10px;
 	display: inline-block;
+	position: relative;
+}
+
+.messages > li span small {
+	display: block;
+	color: #aaa;
+	text-align: right;
+}
+
+.messages > li span .close {
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	border-radius: 50px;
+	height: 20px;
+	width: 20px;
+	background-color: #f33;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+	opacity: 0;
+	transition: 0.3s ease-in-out all;
+}
+
+.messages > li:hover span .close {
+	opacity: 0.3;
+}
+
+.messages > li span .close:hover {
+	opacity: 0.8;
 }
