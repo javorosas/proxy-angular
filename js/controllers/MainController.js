@@ -4,12 +4,6 @@ angular.module('MainCtrl', ['MessageService'])
 
 		getMessages();
 
-		function test() {
-			return $scope.messages.filter(function (msg) {
-				return !msg.createdOn;
-			});
-		}
-
 		function refresh() {
 			$timeout(getMessages, 5000);
 		}
