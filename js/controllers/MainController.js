@@ -12,7 +12,7 @@ angular.module('MainCtrl', ['MessageService'])
 			Message.getAll().success(function (data) {
 				$scope.messages = data;
 			});
-			//refresh();
+			refresh();
 		};
 
 		$scope.new = function () {
