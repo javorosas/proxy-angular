@@ -11,6 +11,7 @@ angular.module('MainCtrl', ['MessageService'])
 				Message.add($scope.newMessage).success(function (message) {
 					$scope.messages.push(message);
 				});
+				$scope.newMessage = '';
 			}
 		};
 	});

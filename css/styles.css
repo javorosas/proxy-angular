@@ -1,0 +1,25 @@
+.new {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.new input {
+	margin-bottom: 5px;
+}
+
+.messages {
+	list-style: none;
+	padding: 0;
+}
+
+.messages > li {
+	margin-bottom: 5px;
+}
+
+.messages > li span {
+	background-color: #f0f0f0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 5px;
+	display: inline-block;
+}
